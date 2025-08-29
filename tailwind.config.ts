@@ -14,6 +14,32 @@ export default {
     },
     extend: {
       colors: {
+        // Mind-Mate brand colors - calming and modern
+        mindmate: {
+          50: "hsl(var(--mindmate-50))",
+          100: "hsl(var(--mindmate-100))",
+          200: "hsl(var(--mindmate-200))",
+          300: "hsl(var(--mindmate-300))",
+          400: "hsl(var(--mindmate-400))",
+          500: "hsl(var(--mindmate-500))",
+          600: "hsl(var(--mindmate-600))",
+          700: "hsl(var(--mindmate-700))",
+          800: "hsl(var(--mindmate-800))",
+          900: "hsl(var(--mindmate-900))",
+          950: "hsl(var(--mindmate-950))",
+        },
+        calm: {
+          50: "hsl(var(--calm-50))",
+          100: "hsl(var(--calm-100))",
+          200: "hsl(var(--calm-200))",
+          300: "hsl(var(--calm-300))",
+          400: "hsl(var(--calm-400))",
+          500: "hsl(var(--calm-500))",
+          600: "hsl(var(--calm-600))",
+          700: "hsl(var(--calm-700))",
+          800: "hsl(var(--calm-800))",
+          900: "hsl(var(--calm-900))",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -62,6 +88,13 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-mindmate': 'linear-gradient(135deg, var(--tw-gradient-stops))',
       },
       keyframes: {
         "accordion-down": {
