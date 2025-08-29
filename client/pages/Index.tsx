@@ -1,7 +1,22 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Brain, MessageCircle, TrendingUp, BookOpen, Sparkles, Heart, Shield, Zap } from "lucide-react";
+import {
+  Brain,
+  MessageCircle,
+  TrendingUp,
+  BookOpen,
+  Sparkles,
+  Heart,
+  Shield,
+  Zap,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Index() {
@@ -17,10 +32,27 @@ export default function Index() {
             <span className="text-xl font-bold gradient-text">Mind‑Mate</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
-            <Link to="/chat" className="text-muted-foreground hover:text-foreground transition-colors">Chat</Link>
-            <Link to="/mood" className="text-muted-foreground hover:text-foreground transition-colors">Mood Tracker</Link>
-            <Link to="/journal" className="text-muted-foreground hover:text-foreground transition-colors">Journal</Link>
-            <Button variant="default" size="sm">Get Started</Button>
+            <Link
+              to="/chat"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Chat
+            </Link>
+            <Link
+              to="/mood"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Mood Tracker
+            </Link>
+            <Link
+              to="/journal"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Journal
+            </Link>
+            <Button variant="default" size="sm">
+              Get Started
+            </Button>
           </div>
         </div>
       </nav>
@@ -32,18 +64,19 @@ export default function Index() {
             <Sparkles className="w-4 h-4" />
             AI-Powered Mental Wellness
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Your Personal
             <span className="gradient-text block">Mental Wellness</span>
             Companion
           </h1>
-          
+
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            Support your mental wellbeing through empathetic AI conversations, mood tracking, 
-            and guided journaling. Built with care for your emotional journey.
+            Support your mental wellbeing through empathetic AI conversations,
+            mood tracking, and guided journaling. Built with care for your
+            emotional journey.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="text-lg px-8 py-6" asChild>
               <Link to="/chat">
@@ -51,7 +84,12 @@ export default function Index() {
                 Start Chatting
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6" asChild>
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-lg px-8 py-6"
+              asChild
+            >
               <Link to="/mood">
                 <TrendingUp className="w-5 h-5 mr-2" />
                 Track Mood
@@ -69,7 +107,8 @@ export default function Index() {
               Everything you need for mental wellness
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive tools designed to support your emotional wellbeing and personal growth.
+              Comprehensive tools designed to support your emotional wellbeing
+              and personal growth.
             </p>
           </div>
 
@@ -80,9 +119,12 @@ export default function Index() {
                 <div className="w-12 h-12 rounded-lg bg-mindmate-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <MessageCircle className="w-6 h-6 text-mindmate-600" />
                 </div>
-                <CardTitle className="text-xl">Empathetic AI Assistant</CardTitle>
+                <CardTitle className="text-xl">
+                  Empathetic AI Assistant
+                </CardTitle>
                 <CardDescription>
-                  Talk through feelings, stress, and anxiety with a compassionate AI companion that truly listens.
+                  Talk through feelings, stress, and anxiety with a
+                  compassionate AI companion that truly listens.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -98,9 +140,12 @@ export default function Index() {
                 <div className="w-12 h-12 rounded-lg bg-calm-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <TrendingUp className="w-6 h-6 text-calm-600" />
                 </div>
-                <CardTitle className="text-xl">Mood Tracking & Analytics</CardTitle>
+                <CardTitle className="text-xl">
+                  Mood Tracking & Analytics
+                </CardTitle>
                 <CardDescription>
-                  Log daily emotions and visualize patterns to better understand your mental wellness journey.
+                  Log daily emotions and visualize patterns to better understand
+                  your mental wellness journey.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -118,7 +163,8 @@ export default function Index() {
                 </div>
                 <CardTitle className="text-xl">Guided Journaling</CardTitle>
                 <CardDescription>
-                  Reflect on thoughts and experiences with structured prompts designed for emotional clarity.
+                  Reflect on thoughts and experiences with structured prompts
+                  designed for emotional clarity.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -149,31 +195,50 @@ export default function Index() {
                 <Shield className="w-8 h-8 text-mindmate-600" />
               </div>
               <h3 className="font-semibold mb-2">Privacy First</h3>
-              <p className="text-sm text-muted-foreground">Your data stays local and secure. No cloud storage of personal conversations.</p>
+              <p className="text-sm text-muted-foreground">
+                Your data stays local and secure. No cloud storage of personal
+                conversations.
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-calm-100 flex items-center justify-center mx-auto mb-4 animate-float" style={{animationDelay: "1s"}}>
+              <div
+                className="w-16 h-16 rounded-full bg-calm-100 flex items-center justify-center mx-auto mb-4 animate-float"
+                style={{ animationDelay: "1s" }}
+              >
                 <Heart className="w-8 h-8 text-calm-600" />
               </div>
               <h3 className="font-semibold mb-2">Empathetic AI</h3>
-              <p className="text-sm text-muted-foreground">Powered by advanced AI trained specifically for mental wellness support.</p>
+              <p className="text-sm text-muted-foreground">
+                Powered by advanced AI trained specifically for mental wellness
+                support.
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-mindmate-100 flex items-center justify-center mx-auto mb-4 animate-float" style={{animationDelay: "2s"}}>
+              <div
+                className="w-16 h-16 rounded-full bg-mindmate-100 flex items-center justify-center mx-auto mb-4 animate-float"
+                style={{ animationDelay: "2s" }}
+              >
                 <Zap className="w-8 h-8 text-mindmate-600" />
               </div>
               <h3 className="font-semibold mb-2">Instant Access</h3>
-              <p className="text-sm text-muted-foreground">Available 24/7 whenever you need support or want to reflect.</p>
+              <p className="text-sm text-muted-foreground">
+                Available 24/7 whenever you need support or want to reflect.
+              </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-calm-100 flex items-center justify-center mx-auto mb-4 animate-float" style={{animationDelay: "3s"}}>
+              <div
+                className="w-16 h-16 rounded-full bg-calm-100 flex items-center justify-center mx-auto mb-4 animate-float"
+                style={{ animationDelay: "3s" }}
+              >
                 <Sparkles className="w-8 h-8 text-calm-600" />
               </div>
               <h3 className="font-semibold mb-2">Personalized</h3>
-              <p className="text-sm text-muted-foreground">Adapts to your unique needs and provides tailored guidance.</p>
+              <p className="text-sm text-muted-foreground">
+                Adapts to your unique needs and provides tailored guidance.
+              </p>
             </div>
           </div>
         </div>
@@ -187,7 +252,8 @@ export default function Index() {
               Ready to start your wellness journey?
             </h2>
             <p className="text-xl text-muted-foreground mb-10">
-              Join thousands of people already improving their mental wellbeing with Mind-Mate.
+              Join thousands of people already improving their mental wellbeing
+              with Mind-Mate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg px-8 py-6" asChild>
@@ -197,12 +263,20 @@ export default function Index() {
                 </Link>
               </Button>
             </div>
-            
+
             <div className="mt-12 flex flex-wrap justify-center gap-4">
-              <Badge variant="secondary" className="text-sm">Free to use</Badge>
-              <Badge variant="secondary" className="text-sm">Privacy focused</Badge>
-              <Badge variant="secondary" className="text-sm">AI-powered</Badge>
-              <Badge variant="secondary" className="text-sm">No signup required</Badge>
+              <Badge variant="secondary" className="text-sm">
+                Free to use
+              </Badge>
+              <Badge variant="secondary" className="text-sm">
+                Privacy focused
+              </Badge>
+              <Badge variant="secondary" className="text-sm">
+                AI-powered
+              </Badge>
+              <Badge variant="secondary" className="text-sm">
+                No signup required
+              </Badge>
             </div>
           </div>
         </div>
